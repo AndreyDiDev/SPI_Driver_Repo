@@ -20,7 +20,7 @@
 
 #include "SPI_Driver_HPP.hpp"
 #include "SPI_Driver_Config_HPP.hpp"
-#include "main.h"
+#include "main_HPP.hpp"
 
 void _MCP3561_write(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t size){
 	// manually operate the !CS signal, because the STM32 hardware NSS signal is (sadly) useless
